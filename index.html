@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 10 - Space War</title>
+        <style>
+            body{
+                background:#334477;
+                color:white;
+                font: 14px 'Arial' sans-serif;
+            }
+
+            .mainContent{
+                width:900px;
+                margin:0px auto;
+            }
+
+            .gameContent{
+                background:white;
+                border-radius:10px;
+                padding:40px;
+                text-align:center;
+            }
+
+            #gameCanvas{
+                border:1px solid #333;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="mainContent">
+            <h3>
+                Space War
+            </h3>
+            <div class="gameContent">
+                <canvas id="gameCanvas" width="800" height="500">
+
+                </canvas>
+            </div>
+        </div>
+        
+        <script src="js/vector.js"></script>
+
+        <script>
+            window.onload = init;
+
+            function init() {
+                var canvas = document.getElementById('gameCanvas');
+
+            }
+
+        </script>
+    </body>
+</html>
